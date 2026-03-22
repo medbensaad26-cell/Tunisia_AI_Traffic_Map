@@ -354,7 +354,7 @@ document.getElementById('findRoute').addEventListener('click', async () => {
 
 // AI TRAFFIC PREDICTION — FASTAPI INTEGRATION
 
-const FASTAPI_URL = 'https://tunisia-ai-traffic-map.onrender.com/';
+const FASTAPI_URL = 'https://tunisia-ai-traffic-map.onrender.com';
 
 // Tunisia bounding box check 
 function isInTunisia(lat, lng) {

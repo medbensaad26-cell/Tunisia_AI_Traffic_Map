@@ -136,3 +136,7 @@ def predict(request: PredictRequest):
         "recommended_label": label_names[str(results[recommended_index]['label'])],
         "recommended_color": label_colors[str(results[recommended_index]['label'])],
     }
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)

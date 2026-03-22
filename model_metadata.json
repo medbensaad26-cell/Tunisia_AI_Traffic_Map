@@ -1,0 +1,36 @@
+{
+  "model_name": "Tunisia Traffic Congestion Model",
+  "version": "1.0",
+  "trained_on": "2026-03-22",
+  "training_rows": 8529663,
+  "accuracy": 84.92,
+  "f1_score": 84.96,
+  "features": [
+    "highway_encoded",
+    "avg_cpi",
+    "avg_rcs",
+    "avg_speed",
+    "min_lanes",
+    "min_width",
+    "total_length_km",
+    "high_risk_ratio",
+    "hour_sin",
+    "hour_cos",
+    "day_sin",
+    "day_cos",
+    "is_rush_hour",
+    "is_weekend",
+    "is_friday_prayer",
+    "is_night"
+  ],
+  "labels": {
+    "0": "Low Congestion",
+    "1": "Medium Congestion",
+    "2": "High Congestion"
+  },
+  "label_colors": {
+    "0": "#43a047",
+    "1": "#fb8c00",
+    "2": "#e53935"
+  }
+}

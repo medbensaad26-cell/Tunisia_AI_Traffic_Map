@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tunisia AI Traffic Map</title>
+
+  <!-- Leaflet CSS (map styles) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Search panel -->
+  <div id="search-panel">
+    <!-- App title -->
+    <h2>Tunisia AI Traffic Map</h2>
+    <!-- Start point input -->
+    <div class="input-group">
+      <label>Point A (Start)</label>
+
+      <!-- Autocomplete container -->
+      <div class="autocomplete-container">
+
+        <!-- Input field for start -->
+        <input type="text" id="pointA" placeholder="Ex: Tunis" autocomplete="off"/>
+
+        <!-- Suggestions list for Point A -->
+        <div class="suggestions-list" id="suggestionsA"></div>
+      </div>
+    </div>
+
+    <!-- Destination input -->
+    <div class="input-group">
+      <label>Point B (Destination)</label>
+
+      <!-- Autocomplete container -->
+      <div class="autocomplete-container">
+
+        <!-- Input field for destination -->
+        <input type="text" id="pointB" placeholder="Ex: Sousse" autocomplete="off"/>
+
+        <!-- Suggestions list for Point B -->
+        <div class="suggestions-list" id="suggestionsB"></div>
+      </div>
+    </div>
+
+    <!-- Button to find routes -->
+    <button id="findRoute">Find Routes</button>
+
+    <!-- Tips to help user search correctly -->
+    <div id="search-tips">
+
+      <!-- Tips title -->
+      <div class="tip-title">Search Tips</div>
+
+      <!-- Example city names -->
+      <div class="tip-item">City: <b>Gafsa</b>, <b>Sousse</b></div>
+
+      <!-- Example area -->
+      <div class="tip-item">Area: <b>Bab Alioua, Tunis</b></div>
+
+      <!-- Example place -->
+      <div class="tip-item">Place: <b>ENICarthage, Ariana</b></div>
+
+      <!-- Example airport -->
+      <div class="tip-item">Airport: <b>Aéroport Tunis Carthage</b></div>
+    </div>
+  </div>
+
+  <!-- Map container -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS (map library) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Main JavaScript file -->
+  <script src="app.js"></script>
+
+</body>
+</html>

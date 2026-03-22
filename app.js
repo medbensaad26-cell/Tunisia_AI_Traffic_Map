@@ -531,7 +531,7 @@ const _originalDrawRoutes = drawRoutes;
 window.drawRoutes = async function(routes) {
   _originalDrawRoutes(routes);
 
-  if (routes.length <= 1) return;
+  if (routes.length < 1) return;
 
   if (!selectedPoints.A || !selectedPoints.B) return;
 

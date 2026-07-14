@@ -366,7 +366,7 @@ Interested in:
 - Intelligent Transportation Systems
 - Real-world AI applications
 
-[LinkedIn](#) · [GitHub](#) · [Portfolio](#)
+[LinkedIn](https://www.linkedin.com/in/mohamed-bensaad-397aba31a/) · [GitHub](https://github.com/medbensaad26-cell) · [Portfolio](https://medbensaad26-cell.github.io/My_portfolio/)
 
 ---
 
